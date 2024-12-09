@@ -21,7 +21,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"]
-    }
+    },
   },
   "include": [
     "next-env.d.ts",
@@ -29,7 +29,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/lib/placeholder-data.ts",
-    "scripts/seed.js"
+    "scripts/seed.js",
+    "app/ui/**/*"
   ],
   "exclude": ["node_modules"]
 }
