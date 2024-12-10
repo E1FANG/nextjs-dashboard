@@ -16,7 +16,6 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
   const initialState: State = { message: null, errors: {} };
   const [state, formAction] = useActionState(createInvoice, initialState);
 
-  console.log(state);
   return (
     <form action={formAction}>
       <div className="rounded-md bg-gray-50 p-4 md:p-6">
@@ -112,6 +111,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                   name="status"
                   type="radio"
                   value="paid"
+                  aria-describedby="customer-error"
                   className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
                 />
                 <label
