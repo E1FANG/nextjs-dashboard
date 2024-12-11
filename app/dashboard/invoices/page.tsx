@@ -7,6 +7,11 @@ import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 import { Suspense } from 'react';
 import { fetchInvoicesPages } from '@/app/lib/data';
 
+import { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: 'Invoices',
+};
  
 // When to use the useSearchParams() hook vs. the searchParams prop?
 // You might have noticed you used two different ways to extract search params. Whether you use one or the other depends on whether you're working on the client or the server.
